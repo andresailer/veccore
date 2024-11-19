@@ -25,6 +25,8 @@ option(BUILD_VC          "Build Vc library from source")
 
 include(CompilerSetup)
 
+add_compile_options(-fexperimental-library)
+
 if (CUDA)
   enable_language(CUDA)
 endif()
@@ -32,6 +34,8 @@ endif()
 add_library(VecCore INTERFACE)
 
 include(Builtins)
+
+
 
 if (VC)
   find_package(Vc 1.3.3 REQUIRED)
