@@ -5,7 +5,7 @@ include(cmake/RecordCmdLine.cmake)
 project(VecCore LANGUAGES C CXX VERSION 0.8.1
     DESCRIPTION "C++ Library for Portable SIMD Vectorization")
 
-set(CMAKE_CXX_STANDARD 20 CACHE STRING "C++ ISO Standard")
+set(CMAKE_CXX_STANDARD 20 CACHE STRING "C++ ISO Standard ")
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 list(INSERT CMAKE_MODULE_PATH 0 ${PROJECT_SOURCE_DIR}/cmake)
